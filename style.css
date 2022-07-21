@@ -1,0 +1,110 @@
+/* google fonts */
+
+@import url("https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Inter&family=Lobster&family=Poppins&display=swap");
+
+/* page body */
+
+body {
+  font-family: "Poppins", sans-serif;
+  background-color: #ffffff;
+}
+/* main css style */
+img {
+  display: block;
+}
+h1 {
+  margin: 0;
+}
+main {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.container {
+  background: #161616;
+  border-radius: 30px;
+  width: 1321px;
+  margin: 20px;
+}
+.players {
+  display: flex;
+}
+.players .player-body {
+  flex: 50%;
+}
+.player-body img {
+  width: 100%;
+}
+.player-body {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 30px;
+}
+.player-body h1 {
+  line-height: 1;
+  color: #ffffff;
+  font-weight: 700;
+  font-size: 70px;
+}
+.player-body p {
+  color: #ffffff;
+  font-size: 10px;
+  font-weight: 400;
+  font-size: 16px;
+}
+.button-watch {
+  font-size: 20px;
+}
+.player-body button {
+  font-size: 20px;
+  background-color: #dd0000;
+  padding: 16px 25px;
+  border-radius: 5px;
+  border: none;
+  color: #ffffff;
+  width: 200px;
+}
+/* player section  */
+.sort-clip {
+  display: grid;
+  grid-template-columns: 100px repeat ();
+}
+.fixer {
+  background: #161616;
+  width: 300px;
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+  padding: 1em;
+  align-items: center;
+  border: 5px solid #161616;
+}
+.fixer,
+.links {
+  border-radius: 1em;
+}
+.links {
+  padding: 1em;
+  background: white;
+  width: 180px;
+  text-align: center;
+}
+.active {
+  background-color: red;
+  color: white;
+}
+/* card */
+.sort-clip {
+  width: 80%;
+  margin: 0 auto;
+  display: grid;
+  grid-template-columns: 200px repeat(3, 1fr);
+}
+
+.card-icon-container {
+  display: flex;
+  align-items: center;
+  column-gap: 4em;
+  margin-left: 10px;
+}
