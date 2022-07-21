@@ -23,14 +23,14 @@ main {
 .container {
   background: #161616;
   border-radius: 30px;
-  width: 1321px;
+  max-width: 1321px;
   margin: 20px;
 }
 .players {
   display: flex;
 }
 .players .player-body {
-  flex: 50%;
+  flex: 1;
 }
 .player-body img {
   width: 100%;
@@ -66,13 +66,10 @@ main {
   width: 200px;
 }
 /* player section  */
-.sort-clip {
-  display: grid;
-  grid-template-columns: 100px repeat ();
-}
+
 .fixer {
   background: #161616;
-  width: 300px;
+  /* width: 300px; */
   display: flex;
   flex-direction: column;
   gap: 2em;
@@ -96,11 +93,11 @@ main {
 }
 /* card */
 .sort-clip {
-  width: 80%;
-  margin: 0 auto;
+  /* width: 80%;
+  margin: 0 auto; */
   margin-top: 100px;
   display: flex;
-  column-gap: 20px;
+  gap: 20px;
 }
 
 .fixer {
@@ -109,13 +106,18 @@ main {
 .main-card-container {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
-  grid-row-gap: 20px;
-  grid-column-gap: 20px;
+  gap: 20px;
+  justify-content: space-around;
 }
 .card {
-  background-color: rgba(169, 168, 168, 0.3);
+  /* background-color: rgba(169, 168, 168, 0.3); */
   padding: 10px;
   border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+}
+.card-img img {
+  width: 100%;
 }
 .btn-transfer {
   margin-top: 5px;
@@ -125,15 +127,63 @@ main {
   padding: 8px;
   border-radius: 5px;
 }
-.card-hading {
+.card-heading {
   font-weight: 600;
   font-size: 18px;
 }
 .card-icon-container {
   display: flex;
   align-items: center;
-
   column-gap: 4em;
   margin-left: 10px;
   margin-top: -12px;
+}
+
+/* FOOTER */
+footer {
+  margin-top: 100px;
+}
+.footer-container {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5em;
+  background-color: #161616;
+  color: white;
+  text-align: center;
+  padding-block: 5em;
+}
+.hr {
+  height: 3px;
+  background-color: #ffffff;
+  width: 80%;
+  margin: 0 auto;
+}
+footer ul {
+  display: flex;
+  justify-content: center;
+  gap: 2em;
+  flex-wrap: wrap;
+}
+footer ul li {
+  list-style: none;
+}
+
+/* responsive website */
+@media only screen and (max-width: 830px) {
+  .sort-clip {
+    flex-direction: column;
+  }
+  .fixer {
+    flex-direction: row;
+    justify-content: space-between;
+    border: none;
+  }
+  .main-card-container {
+    grid-template-columns: repeat(2, 1fr);
+  }
+}
+@media only screen and (max-width: 375px) {
+  .main-card-container {
+    grid-template-columns: 1fr;
+  }
 }
