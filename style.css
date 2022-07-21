@@ -82,7 +82,7 @@ main {
 }
 .fixer,
 .links {
-  border-radius: 1em;
+  border-radius: 10px;
 }
 .links {
   padding: 1em;
@@ -98,13 +98,42 @@ main {
 .sort-clip {
   width: 80%;
   margin: 0 auto;
-  display: grid;
-  grid-template-columns: 200px repeat(3, 1fr);
+  margin-top: 100px;
+  display: flex;
+  column-gap: 20px;
 }
 
+.fixer {
+  height: 250px;
+}
+.main-card-container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-row-gap: 20px;
+  grid-column-gap: 20px;
+}
+.card {
+  background-color: rgba(169, 168, 168, 0.3);
+  padding: 10px;
+  border-radius: 10px;
+}
+.btn-transfer {
+  margin-top: 5px;
+  font-size: 16px;
+}
+.btn-transfer button {
+  padding: 8px;
+  border-radius: 5px;
+}
+.card-hading {
+  font-weight: 600;
+  font-size: 18px;
+}
 .card-icon-container {
   display: flex;
   align-items: center;
+
   column-gap: 4em;
   margin-left: 10px;
+  margin-top: -12px;
 }
